@@ -1,7 +1,7 @@
 import telebot
 import requests
 from bs4 import BeautifulSoup
-bot = telebot.Telebot("7251817952:AAFF-EjpzHSuktw6li_5PcMzgfHvt2yLc7o")
+bot = telebot.TeleBot("7251817952:AAFF-EjpzHSuktw6li_5PcMzgfHvt2yLc7o")
 NEWS_URL= "https://ria.ru/"
 
 def fetch_latest_news():
