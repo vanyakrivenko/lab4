@@ -11,7 +11,7 @@ def fetch_latest_news():
     soup = BeautifulSoup(response.text, 'html.parser')
 
     headlines = []
-    for item in soup.find_all('a', class = "cell-list__item-link")[:5]:
+    for item in soup.find_all('a', class_ = "cell-list__item-link")[:5]:
       title = item.get_text(strip = True)
       link = item['href']
       headlines.append(f"[{title}]({link})")
